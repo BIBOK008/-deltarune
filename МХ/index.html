@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энциклопедия Тьмы: Все боссы Deltarune</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notification-area" id="notificationArea"></div>
+
+    <!-- Кнопка "Наверх" -->
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <div class="container">
+        <div class="header-title">⚔️ CREATING THE DARKNESS ITSELF ⚔️</div>
+        <div class="sans-sub">* Здесь собраны данные о сильнейших существах Тьмы.<br>* Нажимай [СОХРАНИТЬ] чтобы перейти к боссу.</div>
+
+        <!-- ПАНЕЛЬ СОХРАНЕНИЯ (7 боссов) -->
+        <div class="save-panel" id="savePanel">
+            <div class="save-slot" data-boss="king">◈ КОРОЛЬ [Глава 1]<span class="tooltip">Правитель Карнавала Тьмы</span></div>
+            <div class="save-slot" data-boss="jevil">◈ ДЖЕВИЛ [Глава 1]<span class="tooltip">Хаотичный шут из темницы</span></div>
+            <div class="save-slot" data-boss="queen">◈  КОРОЛЕВА [Глава 2]<span class="tooltip">Технологичная правительница</span></div>
+            <div class="save-slot" data-boss="spamton">◈  СПАМТОН NEO [Секрет]<span class="tooltip">[[BIG SHOT]] в новом теле</span></div>
+            <div class="save-slot" data-boss="tenna">◈  ТЕННА [Глава 3]<span class="tooltip">Мистер Антенна, теле-злодей</span></div>
+            <div class="save-slot" data-boss="gerson">◈  ТИТАН [Глава 4]<span class="tooltip">Древний великан из бездны</span></div>
+            <div class="save-slot secret-glitch" data-boss="knight">◈ РЫЦАРЬ [Антагонист]<span class="tooltip">Загадочная фигура, открывающая Фонтаны</span></div>
+        </div>
+
+        <!-- Кнопка секретной темы -->
+        <button class="secret-theme-btn" id="secretThemeBtn">[СЕКРЕТНАЯ ТЕМА]</button>
+
+        <!-- БОСС 0: КОРОЛЬ (Глава 1) -->
+        <div class="boss-encounter" id="boss-king">
+            <div class="boss-header" style="border-bottom-color: #8B4513;">
+                <span class="boss-name">THE KING / КОРОЛЬ ТЬМЫ</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%; background: linear-gradient(90deg, #8B4513, #D2691E);"></div></div>
+                <span class="hp-text">1200 HP</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #8B4513;">
+                    <img src="https://static.wikia.nocookie.net/zlodei/images/0/08/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%94%D0%B5%D0%BB%D1%8C%D1%82%D0%B0%D1%80%D1%83%D0%BD.gif/revision/latest?cb=20251020105219&path-prefix=ru" 
+                         alt="King Sprite" 
+                         class="boss-img" data-boss-quote="king"
+                         onerror="this.src='https://via.placeholder.com/150x150/3d2b1f/8B4513?text=KING'">
+                    <p>◈ КОРОЛЬ ТЬМЫ ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="Контроль над шахматными солдатами"><strong>⚡ СПОСОБНОСТЬ:</strong> Управление пешками</div>
+                        <div class="act-item" data-info="Огромная коса"><strong>🗡️ ОРУЖИЕ:</strong> Гигантская коса</div>
+                        <div class="act-item" data-info="Высокая скорость"><strong>💨 СКОРОСТЬ:</strong> Непредсказуемая</div>
+                        <div class="act-item" data-info="Безумная преданность"><strong>🧠 ХАРАКТЕР:</strong> Жесток, мстителен</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>🎴 СПОСОБНОСТИ</h4>
+                    <ul>
+                        <li data-info="Пики">Атакует карточными пиками</li>
+                        <li data-info="Атака копьём">Копья летящие в тебя</li>
+                        <li data-info="Шипастые стены">Всё поле покрывется острыми шипами</li>
+                        <li data-info="Захват поля">Король захватывает поле и вертит вокруг своих атак</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">☀️ ОСОБЕННОСТЬ БОЯ</div>
+                <p style="margin-top: 10px;"><strong>Сильные атаки:</strong> Если начать с ним разговор то каждый персонаж получит усиленные способности</p>
+            </div>
+            <div class="quote-block" data-quote="king">
+                "ВЫ ДУМАЕТЕ, ВЫ МОЖЕТЕ ПОБЕДИТЬ МЕНЯ? Я — КОРОЛЬ ЭТОГО МИРА!"
+                <div class="quote-author">— Король Тьмы</div>
+            </div>
+        </div>
+
+        <!-- БОСС 1: ДЖЕВИЛ -->
+        <div class="boss-encounter" id="boss-jevil">
+            <div class="boss-header">
+                <span class="boss-name">JEVIL / ДЖЕВИЛ</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%;"></div></div>
+                <span class="hp-text">?? HP [Гипноз: 9+]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container">
+                    <img src="https://media1.tenor.com/m/QIwqQ3-00w4AAAAC/jevil-undertale.gif" 
+                         alt="Jevil Sprite" 
+                         class="boss-img" data-boss-quote="jevil"
+                         onerror="this.src='https://via.placeholder.com/150x150/1a1225/9147ff?text=JEVIL'">
+                    <p>◈ ДЖЕВИЛ ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="⚡ СИЛА ДЖЕВИЛА: Уровень стены+"><strong>⚡ СИЛА:</strong> Уровень стены+</div>
+                        <div class="act-item" data-info="🏋️ ПОДЪЁМ ДЖЕВИЛА: Класс 10"><strong>🏋️ ПОДЪЁМ:</strong> Класс 10</div>
+                        <div class="act-item" data-info="💨 СКОРОСТЬ ДЖЕВИЛА: Выше человеческой"><strong>💨 СКОРОСТЬ:</strong> Выше человеческой</div>
+                        <div class="act-item" data-info="🧠 ИНТЕЛЛЕКТ ДЖЕВИЛА: ??? (Безумен, но хитер)"><strong>🧠 ИНТЕЛЛЕКТ:</strong> ???</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>🃏 УМЕНИЯ (POWERS)</h4>
+                    <ul>
+                        <li data-info="Полет (Тип 2) - Джевил может летать">Полет (Тип 2)</li>
+                        <li data-info="Остаточные изображения - Создает копии">Остаточные изображения</li>
+                        <li data-info="Телепортация - Мгновенно перемещается">Телепортация</li>
+                        <li data-info="Владение оружием (косы)">Владение оружием (косы)</li>
+                        <li data-info="Изменение формы">Изменение формы</li>
+                        <li data-info="Телекинез">Телекинез</li>
+                        <li data-info="Создание копий/размеров">Создание копий/размеров</li>
+                        <li data-info="Взрывы">Взрывы</li>
+                        <li data-info="Манипуляция душой (СОУЛ)">Манипуляция душой</li>
+                        <li data-info="Искажение реальности">Искажение реальности</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>🎲 АТАКИ (ATTACKS)</h4>
+                    <ul>
+                        <li data-info="CHAOS BOMB: взрыв хаоса"><strong>CHAOS BOMB</strong></li>
+                        <li data-info="Пики (Spades) - летят со всех сторон">Пики (Spades)</li>
+                        <li data-info="Сердца (Hearts) - бомбы">Сердца (Hearts)</li>
+                        <li data-info="Трефы (Clubs) - веерный выстрел">Трефы (Clubs)</li>
+                        <li data-info="Бубны (Diamonds) - снизу вверх">Бубны (Diamonds)</li>
+                        <li data-info="Карусели - 3D-цилиндры">Карусели</li>
+                        <li data-info="FINAL CHAOS - гигантские косы"><strong>FINAL CHAOS</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">💥 ОСОБЕННОСТЬ БОЯ</div>
+                <p>Чтобы утомить Джевила, нужно применить гипноз не менее <strong>9 раз</strong>.</p>
+            </div>
+            <div class="quote-block" data-quote="jevil">
+                "CHAOS CHAOS! I CAN DO ANYTHING!"
+                <div class="quote-author">— Джевил</div>
+            </div>
+        </div>
+
+        <!-- БОСС 2: КОРОЛЕВА -->
+        <div class="boss-encounter" id="boss-queen">
+            <div class="boss-header">
+                <span class="boss-name">QUEEN / КОРОЛЕВА</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 75%;"></div></div>
+                <span class="hp-text">[Щит: 3 слоя]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #6a4e9b;">
+                    <img src="https://media1.tenor.com/m/0oXg4v6_egcAAAAC/deltarune-queen.gif" 
+                         alt="Queen Sprite" 
+                         class="boss-img" data-boss-quote="queen"
+                         onerror="this.src='https://via.placeholder.com/150x150/1f1935/6a4e9b?text=QUEEN'">
+                    <p>◈ КОРОЛЕВА ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="Контроль над Бёрдли"><strong>⚡ ОСОБОЕ:</strong> Контроль над Бёрдли</div>
+                        <div class="act-item" data-info="Кислотный щит (3 фазы)"><strong>🛡️ ЩИТ:</strong> Кислотный</div>
+                        <div class="act-item" data-info="Красный разрушитель (Сьюзи)"><strong>💣 РАЗРУШИТЕЛЬ:</strong> Красный</div>
+                        <div class="act-item" data-info="Лечение Ральзея x2"><strong>❤️ ЛЕЧЕНИЕ:</strong> Ральзей</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>⚔️ ФАЗЫ ЩИТА</h4>
+                    <ul>
+                        <li data-info="25%, 50%, 75% HP - активация щита">25%, 50%, 75% — активация щита</li>
+                        <li data-info="Тост убирает 1 деление щита">Тост — убирает 1 деление</li>
+                        <li data-info="Совместный тост убирает 4 деления">Совместный тост — убирает 4</li>
+                        <li data-info="Красный разрушитель Сьюзи эффективен">Красный разрушитель Сьюзи</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>🌀 АТАКИ КОРОЛЕВЫ</h4>
+                    <ul>
+                        <li data-info="Торнадо Бёрдли">Торнадо Бёрдли</li>
+                        <li data-info="Сапог давит на клетку">Сапог</li>
+                        <li data-info="Векторные головы">Векторные головы</li>
+                        <li data-info="Экраны с курсорами">Экраны с курсорами</li>
+                        <li data-info="Атака 'ДРАМА'">Атака "ДРАМА"</li>
+                        <li data-info="Бокал кислоты">Бокал кислоты</li>
+                        <li data-info="Ультимативная атака - сбой">Ультимативная атака</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">🤖 ДВА ПУТИ</div>
+                <p><strong>Атака:</strong> Бёрдли поджарит крыло, но освободится.<br>
+                <strong>Действия:</strong> Ослабление контроля — Бёрдли помогает прогнать Королеву.</p>
+            </div>
+            <div class="quote-block" data-quote="queen">
+                "Ох, Мои Милые Идиотские Дети..."
+                <div class="quote-author">— Королева</div>
+            </div>
+        </div>
+
+        <!-- БОСС 3: СПАМТОН NEO -->
+        <div class="boss-encounter" id="boss-spamton">
+            <div class="boss-header">
+                <span class="boss-name">SPAMTON NEO [Снежная могила]</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%;"></div></div>
+                <span class="hp-text">[SOLO: только Крис]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #ff3e3e;">
+                    <img src="https://media1.tenor.com/m/ukVv5QrLnm0AAAAC/spamton-neo.gif" 
+                         alt="Spamton NEO Sprite" 
+                         class="boss-img" data-boss-quote="spamton"
+                         onerror="this.src='https://via.placeholder.com/150x150/2a1e3a/ff3e3e?text=SPAMTON'">
+                    <p>◈ [BIG SHOT] ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="X-SLASH: Основной урон"><strong>⚔️ X-SLASH</strong></div>
+                        <div class="act-item" data-info="FRIED PIPIS: Лечение 120 HP"><strong>🥯 FRIED PIPIS</strong></div>
+                        <div class="act-item" data-info="BIG SHOT: Расчистка путей"><strong>💢 BIG SHOT</strong></div>
+                        <div class="act-item" data-info="HELP CALL: Финальная фаза"><strong>📞 HELP CALL</strong></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>🎯 АТАКИ (ПАТТЕРНЫ)</h4>
+                    <ul>
+                        <li data-info="Головы Спамтона - летят и стреляют">Головы Спамтона</li>
+                        <li data-info="Flappy Bird - стена с бомбами">Flappy Bird</li>
+                        <li data-info="Heart Attack - сердце стреляет">Heart Attack</li>
+                        <li data-info="Pipis - прыгают, надо отстреливать">Pipis</li>
+                        <li data-info="Crawling - ползет с телефонными руками">Crawling</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>📈 ПРОГРЕССИЯ</h4>
+                    <ul>
+                        <li>С каждым повтором — быстрее и сложнее</li>
+                        <li>Финальный этап: 3 Pipis → море снарядов</li>
+                        <li>На 10% HP → ACT: вызывать друзей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">📦 НАГРАДА</div>
+                <p><strong>Кукольный шарф (Puppet Scarf):</strong> +10 АТК, -6 MAG (только для Ральзея).</p>
+            </div>
+            <div class="quote-block" data-quote="spamton">
+                "NOW'S YOUR CHANCE TO BE A [[BIG SHOT]]!!"
+                <div class="quote-author">— Спамтон NEO</div>
+            </div>
+        </div>
+
+        <!-- БОСС 4: ТЕННА (Глава 3) -->
+        <div class="boss-encounter" id="boss-tenna">
+            <div class="boss-header" style="border-bottom-color: #00BFFF;">
+                <span class="boss-name">TENNA / МИСТЕР АНТЕННА</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%; background: linear-gradient(90deg, #00BFFF, #1E90FF);"></div></div>
+                <span class="hp-text">950 HP [Сигнал: 4]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #00BFFF;">
+                    <img src="https://media1.tenor.com/m/dnZM0m3OSI8AAAAC/tenna-tennadeltarune.gif" 
+                         alt="Tenna Sprite" 
+                         class="boss-img" data-boss-quote="tenna"
+                         onerror="this.src='https://via.placeholder.com/150x150/0a2a3a/00BFFF?text=TENNA'">
+                    <p>◈ МИСТЕР АНТЕННА ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="Управление телесигналами"><strong>📡 СПОСОБНОСТЬ:</strong> Контроль сигналов</div>
+                        <div class="act-item" data-info="Электрические разряды"><strong>⚡ ОРУЖИЕ:</strong> Электричество</div>
+                        <div class="act-item" data-info="Манипуляция экранами"><strong>📺 ОСОБЕННОСТЬ:</strong> ТВ-магия</div>
+                        <div class="act-item" data-info="Навязчивый ведущий"><strong>🎭 ХАРАКТЕР:</strong> Эгоистичный, шоумен</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>📺 СПОСОБНОСТИ</h4>
+                    <ul>
+                        <li data-info="Электрические разряды">Электрические разряды</li>
+                        <li data-info="Манипуляция экранами">Контроль над экранами</li>
+                        <li data-info="Создание помех">Электромагнитные помехи</li>
+                        <li data-info="Перегрузка сигналом">Сигнальная перегрузка</li>
+                        <li data-info="Гипнотический взгляд">Гипнотический взгляд</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>📡 АТАКИ</h4>
+                    <ul>
+                        <li data-info="Молния из антенны"><strong>ЭЛЕКТРО-ШОК</strong></li>
+                        <li data-info="Стена видеопомех"><strong>ТВ-СТАТИКА</strong></li>
+                        <li data-info="Призыв камер">ВЗГЛЯД КАМЕРЫ</li>
+                        <li data-info="Звуковая волна">ГРОМКОСТЬ НА МАКСИМУМ</li>
+                        <li data-info="Перегрузка электричеством"><strong>ФИНАЛЬНЫЙ СИГНАЛ</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">📻 ОСОБЕННОСТЬ БОЯ</div>
+                <p>Тенна использует телевизоры для атаки. Нужно <strong>разбивать экраны</strong>, чтобы ослабить его сигнал. Если позволить ему накопить 4 заряда сигнала — активируется особо сильная атака.</p>
+                <p style="margin-top: 10px;"><strong>Спрятаться:</strong> Некоторые атаки можно избежать, спрятавшись за диваном.</p>
+            </div>
+            <div class="quote-block" data-quote="tenna">
+                "ДОБРО ПОЖАЛОВАТЬ НА МОЁ ШОУ! СЕГОДНЯ ВЫ — МОИ ГОСТИ!"
+                <div class="quote-author">— Мистер Антенна</div>
+            </div>
+        </div>
+
+        <!-- БОСС 5: ТИТАН (Глава 4) -->
+        <div class="boss-encounter" id="boss-gerson">
+            <div class="boss-header" style="background-color: #1a1a2e; border-bottom-color: #c96cf5;">
+                <span class="boss-name">TITAN / ДРЕВНИЙ ТИТАН</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%; background: linear-gradient(90deg, #c0c0c0, #f5f5f5);"></div></div>
+                <span class="hp-text">2500 HP [Кошмар: 3]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #c96cf5;">
+                    <img src="https://static.wikia.nocookie.net/vsbattles/images/3/3e/Titan_battle_idle.gif/revision/latest?cb=20250609041945" 
+                         alt="Titan Sprite" 
+                         class="boss-img" data-boss-quote="gerson"
+                         onerror="this.src='https://via.placeholder.com/150x150/1a1a2e/c96cf5?text=TITAN'">
+                    <p>◈ ДРЕВНИЙ ТИТАН ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="Гигантские размеры"><strong>🗿 РАЗМЕР:</strong> Космический</div>
+                        <div class="act-item" data-info="Древняя магия"><strong>🔮 МАГИЯ:</strong> Первобытная</div>
+                        <div class="act-item" data-info="Сокрушительная сила"><strong>💪 СИЛА:</strong> Божественная</div>
+                        <div class="act-item" data-info="Неизвестное сознание"><strong>❓ ИНТЕЛЛЕКТ:</strong> ???</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>🗡️ СПОСОБНОСТИ</h4>
+                    <ul>
+                        <li data-info="Удар огромной рукой">Сокрушающий удар</li>
+                        <li data-info="Вызов метеоритов">Метеоритный дождь</li>
+                        <li data-info="Создание пропасти">Разлом реальности</li>
+                        <li data-info="Аура страха">Кошмарное присутствие</li>
+                        <li data-info="Восстановление">Регенерация</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>🌋 АТАКИ</h4>
+                    <ul>
+                        <li data-info="Титанический удар"><strong>ГНЕВ ТИТАНА</strong></li>
+                        <li data-info="Дождь из камней"><strong>ЗЕМЛЕТРЯСЕНИЕ</strong></li>
+                        <li data-info="Луч из глаз">СВЕТ БЕЗДНЫ</li>
+                        <li data-info="Обвал сверху">РУКА РОКА</li>
+                        <li data-info="Уничтожение всего"><strong>КОНЕЦ ЭРЫ</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">🌍 ОСОБЕННОСТЬ БОЯ</div>
+                <p>Титан — огромный босс. Бой проходит в несколько <strong>фаз разрушения</strong>: сначала руки, затем голова. В финальной фазе поле боя постоянно меняется.</p>
+                <p style="margin-top: 10px;"><strong>Секрет:</strong> Нужно уничтожить кристаллы на теле Титана, чтобы ослабить его регенерацию.</p>
+            </div>
+            <div class="quote-block" data-quote="gerson">
+                "ТЫ... ТОЛЬКО ПЫЛИНКА В МОЁМ МИРЕ..."
+                <div class="quote-author">— Древний Титан</div>
+            </div>
+        </div>
+
+        <!-- БОСС 6: РЫЦАРЬ (Антагонист) -->
+        <div class="boss-encounter secret-glitch" id="boss-knight" style="border-color: #ff00c1;">
+            <div class="boss-header" style="background-color: #1a0a2e; border-bottom-color: #ff00c1;">
+                <span class="boss-name">THE KNIGHT / ТАИНСТВЕННЫЙ РЫЦАРЬ</span>
+                <div class="boss-hp-bar"><div class="boss-hp-fill" style="width: 100%; background: linear-gradient(90deg, #ff00c1, #ff66cc);"></div></div>
+                <span class="hp-text">???? HP [????????]</span>
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+                <div class="boss-image-container" style="border-color: #ff00c1;">
+                    <img src="https://static.wikia.nocookie.net/1b43c2e8-3d44-4e15-994f-8ef2395c10a5/scale-to-width/370" 
+                         alt="Knight Sprite" 
+                         class="boss-img" data-boss-quote="knight"
+                         onerror="this.src='https://via.placeholder.com/150x150/1a0a2e/ff00c1?text=KNIGHT'">
+                    <p>◈ ??? РЫЦАРЬ ??? ◈</p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="act-menu" style="margin: 0;">
+                        <div class="act-item" data-info="Открытие Фонтанов Тьмы"><strong>🗡️ СПОСОБНОСТЬ:</strong> Создание Фонтанов</div>
+                        <div class="act-item" data-info="Огромная сила"><strong>⚔️ ОРУЖИЕ:</strong> Меч / Копьё</div>
+                        <div class="act-item" data-info="Таинственная броня"><strong>🛡️ ЗАЩИТА:</strong> Неизвестная</div>
+                        <div class="act-item" data-info="?????"><strong>❓ ТАЙНА:</strong> Личность скрыта</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>⚔️ ИЗВЕСТНЫЕ СПОСОБНОСТИ</h4>
+                    <ul>
+                        <li data-info="Создание Тёмных Фонтанов">Создание Тёмных Фонтанов</li>
+                        <li data-info="Владение мечом">Фехтование</li>
+                        <li data-info="Тёмная магия">Контроль над тьмой</li>
+                        <li data-info="Манипуляция душой">Влияние на душу</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>❓ ТЕОРИИ О ЛИЧНОСТИ</h4>
+                    <ul>
+                        <li data-info="Потерянная девочка?">Возможно, знакомый главного героя</li>
+                        <li data-info="Воплощение Тёмного фонтана?">Связан с историей</li>
+                        <li data-info="Новый персонаж">Полностью новый герой</li>
+                        <li data-info="????">Никто не знает точно</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="attack-pattern">
+                <div class="pattern-title">🗡️ ИЗВЕСТНО О НЁМ</div>
+                <p><strong>Рыцарь</strong> — антагонист, который открывает <strong>Тёмные Фонтаны</strong>, чтобы раздвинуть границы миров. Появляется в конце Главы 2, когда Королева говорит о нём. Его истинная личность пока неизвестна.</p>
+            </div>
+            <div class="quote-block" data-quote="knight">
+                "Я ОТКРОЮ ВСЕ ФОНТАНЫ... ЧТОБЫ СОЗДАТЬ НОВЫЙ МИР..."
+                <div class="quote-author">— Рыцарь (из слов Королевы)</div>
+            </div>
+        </div>
+
+        <!-- ИНВЕНТАРЬ -->
+        <hr>
+        <div style="background-color: #0d0b16; padding: 20px; border: 3px solid #735e9e;">
+            <h2 style="color: #b396e0; font-family: 'Press Start 2P'; font-size: 22px; margin-bottom: 20px;">📦 ИНВЕНТАРЬ (НАГРАДЫ)</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 25px;">
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Король</h4><ul>
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Королева</h4><ul></ul>
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Джевил</h4><ul><li>Дьявольский нож (Devilsknife)</li><li>Дьявольский хвост (Devilstail)</li></ul></div>
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Спамтон NEO</h4><ul><li>Dealmaker Armor</li><li>Puppet Scarf (Snowgrave)</li></ul></div>
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Тенна</h4><ul>
+                <div style="flex: 1;"><h4 style="color:#f7b32b;">Титан</h4><ul>
+                <div style="flex: 1;"><h4 style="color:#ff00c1;">Рыцарь</h4><ul><li>Тёмный осколок</li></ul></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Ⓒ 2026 Энциклопедия Тьмы | Сделано с ❤️ для фанатов Deltarune<br>
+            * Спасибо, что играешь. Не забывай СОХРАНЯТЬСЯ.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>    <!-- Подключаем JavaScript В ПРАВИЛЬНОМ ПОРЯДКЕ -->
+    <script src="loading.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
